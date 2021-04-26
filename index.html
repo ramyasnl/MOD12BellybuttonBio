@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color: rgb(235, 238, 241);">
+
+  
+  <div class="jumbotron">
+    <div class="text-center">
+      <div style="background-image: url('bacteria1.jpg');
+        background-size: cover;height: 360px;padding-top: 80px ;">
+        <h1 style=color:chartreuse>Belly Button Biodiversity Dashboard</h1>
+        <h2 style=color:chartreuse>Use the interactive charts below to explore the dataset</h2>
+      </div>
+    </div>
+  </div>
+  <!-- Article title and paragraph -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 article-title">
+        <h3><b>Why Meat Taste So Delicious? </h3></b></br><h4>Why Replace Meat?</h4></br>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+      <div class="col-md-8 article-p">
+        <p>
+          This arguably understudied question is the scientific focus of the research team at Improbable Foods,
+           the company Green founded and whose mission is to completely replace animals as a food production technology. 
+           Discovering and imitating the molecular interactions that make meat delicious 
+           “is the most important scientific question in the world right now,” Green said. 
+          This is the story of Rosa a scientist at Improbable Beef mimics the delicious taste 
+          of meat by studying and documenting the different microbes.
+          <br /><br />Bacterial species are not well studied and many of them remain unknown to science. 
+          Labs across the country have success in synthesizing meat from algae, fungi and planktons. 
+          Rosa’s hypothesis is there should be a microorganism that can supply the next best taste and 
+          she believes that they are found in each human body.
+          The human body is a source of thousands of bacteria, different types of bacteria live in different parts of the body.
+          Bacteria found in gut are not the same as the bacteria found in eye lashes.
+          Rosa believes that bacterial species tasting like beef is present in someone’s belly button.<br /><br />
+          To test the hypothesis, we have sampled the belly button bacterial species of people across the country. 
+          Each person is given an id number to protect their identity. 
+          Our dashboard represents the different bacterial species and their occurrence in all the test subjects.
+          We did a visualization which helps to understand the data better.  
+        </div>
+      </div>
+    </div>
+  <!-- <div class="container"></div> -->
+  <div class="row">
+    <div class="col-md-2">
+      <div class="well">
+        <h5><b>Test Subject ID No.:</b></h5>
+        <select id="selDataset" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title"><b>Demographic Info</b></h3>
+        </div>
+        <div id="sample-metadata" class="panel-body"style="height:8cm";></div>
+      </div>
+    </div>
+
+    <div class="col-md-5">
+      <div id="bar"></div>
+    </div>
+    <div class="col-md-5">
+      <div id="gauge"></div>
+    </div>
+  </div>
+
+
+  <div class="row-center">
+    <div class="col-md-12" >
+
+      <div id="bubble">
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="bar_chart1.js"></script>
+
+
+</body>
+
+</html>
